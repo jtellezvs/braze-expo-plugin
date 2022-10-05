@@ -169,7 +169,7 @@ export const withAndroidBrazeSdk: ConfigPlugin<ConfigProps> = (config, props) =>
   // If FCM is enabled, then move the 
   // google-services.json file to the app
   if (props.enableFirebaseCloudMessaging) {
-    alert("using firebase cloud messaging")
+    console.log("attempting to copy google services")
     // Copy google-services.json
     config = withDangerousMod(config, [
       'android',
